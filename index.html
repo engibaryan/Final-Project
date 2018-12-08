@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+      <title>Ankap Game</title>
+<style>
+    html { 
+  background: url(b.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  
+  background-size: cover;
+}
+
+.animate {
+    opacity: 0;
+    position: absolute;
+    left: 450px;
+    top: 350x;
+    
+    }
+    
+.welcome {
+    font-size: 75px;
+    font-family:cursive;
+    position:fixed;
+    top: 150px;
+    color: black;
+    }
+    
+
+    .we {
+    opacity: 0;
+    font-size: 35px;
+    font-family: cursive;
+    position:fixed;
+    color: black;
+    
+    
+        
+    }
+    
+
+    .but {
+         cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+    opacity: 0;
+    background: #1488cc;
+    background-size: 100%;
+    font-size: 50px;
+    font-family: cursive;
+    color: black;
+    padding: 0;
+    border: none;
+    position: absolute;
+    left:  900px;
+    top:400px;
+     background-image: url(b.jpg);
+    }
+  
+    #p1{
+      display: none;
+      position: absolute;
+      left: 800px;
+      top: 200px;
+    }
+    #present {
+        position: absolute;
+        left: 1300px;
+        top: 230px;
+        
+    }
+ 
+        .but:hover {
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        
+}
+
+#close-image img, #close-CSS img {
+    color: darkblue;
+    display: none;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    height: 50px;  
+    width: 50px;
+}
+    #close-image , #close-CSS {
+       display: none;
+    }
+    
+    #canvas {
+        position: absolute;
+        top: 0px;
+        left: 400px;
+    }
+    #p2{
+       display: none; 
+    }
+</style>
+</head>
+    
+<body>
+    <audio id="myTune">
+          <source src="sound.mp3">
+          <source src="sound.ogg">
+        </audio>
+        <button id="close-image" onclick="document.getElementById('myTune').play()"><img src="assets/Speaker_Icon.svg"></button>
+        <button  id="close-CSS" onclick="document.getElementById('myTune').pause()"><img src="assets/Mute_Icon.svg"></button>
+      <canvas id="canvas"></canvas>
+      
+    
+    <h2 class = "we" id="present">Present</h2>
+   
+<div class = "animate">
+    
+    
+    <h2 class = "welcome">Robert Margaryan<br>Norayr Khachatryan <br> Khachik Yengibaryan</h2>
+             
+    </div>
+    <canvas id = "canvas"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jQuery.js"></script>
+    <button class="but"  >START?</button>
+       
+    <p id = "p1" class="welcome">THE GAME</p>
+    <p class="welcome" id="p2">You really want to start? Use arrows to control your spaceship and space to fire. Reach the enemy border to win. If you catch a bullet you are dead. Protect your border from the enemies otherwise you will lose.Press Enter <b>twice</b> to start. You can use it to restart the game as well.</p>
+      
+    
+</body>
+</html>
